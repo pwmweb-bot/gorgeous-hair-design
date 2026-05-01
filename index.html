@@ -1,0 +1,841 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gorgeous Hair Design — Hair, Aesthetics &amp; Piercing | Droitwich</title>
+  <meta name="description" content="Expert hair salon in Droitwich Spa — cuts, colour, balayage, aesthetics &amp; piercing since 2006. 5.0★ from 297 reviews. Book online today.">
+  <meta name="keywords" content="hair salon droitwich, hairdresser droitwich, balayage droitwich, wedding hair droitwich, highlights droitwich, body piercing droitwich">
+  <link rel="canonical" href="https://www.gorgeoushairdesign.uk/">
+  <meta property="og:title" content="Gorgeous Hair Design — Hair, Aesthetics &amp; Piercing | Droitwich">
+  <meta property="og:description" content="Expert hair salon in Droitwich Spa — cuts, colour, balayage, aesthetics &amp; piercing since 2006. 5.0★ from 297 reviews.">
+  <meta property="og:url" content="https://www.gorgeoushairdesign.uk/">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://www.gorgeoushairdesign.uk/images/hero-home.jpg">
+  <meta property="og:locale" content="en_GB">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Gorgeous Hair Design — Hair, Aesthetics &amp; Piercing | Droitwich">
+  <meta name="twitter:description" content="Expert hair salon in Droitwich Spa — cuts, colour, balayage, aesthetics &amp; piercing since 2006. 5.0★ from 297 reviews.">
+  <meta name="twitter:image" content="https://www.gorgeoushairdesign.uk/images/hero-home.jpg">
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
+  <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Jost:wght@300;400;500;600&family=Material+Icons+Outlined&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <style>
+    /* ── Hero ──────────────────────────────────────────────── */
+    .hero {
+      min-height: 100vh;
+      position: relative;
+      display: flex;
+      align-items: center;
+      overflow: hidden;
+      background: var(--dark);
+    }
+    .hero-bg {
+      position: absolute;
+      inset: 0;
+      width: 100%; height: 100%;
+      object-fit: cover;
+      opacity: 0.5;
+      filter: grayscale(100%);
+      will-change: transform;
+    }
+    .hero-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(105deg, rgba(26,26,26,0.82) 0%, rgba(26,26,26,0.35) 60%, rgba(184,149,106,0.15) 100%);
+    }
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      max-width: 660px;
+      padding-top: var(--nav-h);
+    }
+    .hero-content h1 { color: var(--white); line-height: 1.1; margin-bottom: 1.25rem; }
+    .hero-content h1 em { font-style: italic; color: var(--gold); }
+    .hero-content p { color: rgba(255,255,255,0.78); font-size: 1.1rem; max-width: 480px; margin-bottom: 2.2rem; }
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(184,149,106,0.2);
+      border: 1px solid rgba(184,149,106,0.4);
+      border-radius: 100px;
+      padding: 8px 18px;
+      font-size: 0.78rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--gold-light);
+      font-weight: 500;
+      margin-bottom: 1.5rem;
+    }
+    .hero-ratings {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      margin-top: 2rem;
+      padding: 16px 24px;
+      background: rgba(255,255,255,0.08);
+      backdrop-filter: blur(8px);
+      -webkit-backdrop-filter: blur(8px);
+      border: 1px solid rgba(255,255,255,0.12);
+      border-radius: 8px;
+      max-width: fit-content;
+    }
+    .hero-rating-item {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      text-decoration: none;
+      transition: opacity 0.3s;
+    }
+    .hero-rating-item:hover { opacity: 0.8; }
+    .hero-rating-stars {
+      color: #f5a623;
+      font-size: 0.9rem;
+      letter-spacing: 1px;
+    }
+    .hero-rating-score {
+      font-family: var(--font-h);
+      font-size: 1.4rem;
+      font-weight: 600;
+      color: var(--white);
+      line-height: 1;
+    }
+    .hero-rating-label {
+      font-family: var(--font-b);
+      font-size: 0.78rem;
+      color: rgba(255,255,255,0.6);
+    }
+    .hero-rating-divider {
+      width: 1px;
+      height: 32px;
+      background: rgba(255,255,255,0.2);
+    }
+    @media (max-width: 768px) {
+      .hero-ratings {
+        flex-direction: column;
+        gap: 12px;
+        padding: 14px 20px;
+      }
+      .hero-rating-divider {
+        width: 80%;
+        height: 1px;
+      }
+    }
+    .hero-scroll { display: none; }
+
+    /* ── Pain ──────────────────────────────────────────────── */
+    .pain-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+
+    /* ── Solution ──────────────────────────────────────────── */
+    .solution-img {
+      position: relative;
+      border-radius: var(--r-lg);
+      overflow: hidden;
+      aspect-ratio: 4/5;
+    }
+    .solution-img img { width: 100%; height: 100%; object-fit: cover; }
+    .solution-img-badge {
+      position: absolute;
+      bottom: 28px; right: -16px;
+      background: var(--gold);
+      color: var(--white);
+      padding: 20px 24px;
+      border-radius: var(--r-lg);
+      text-align: center;
+      box-shadow: 0 8px 32px rgba(184,149,106,0.4);
+    }
+    .solution-img-badge .num { font-family: var(--font-h); font-size: 2.8rem; line-height: 1; font-weight: 300; }
+    .solution-img-badge .lbl { font-size: 0.7rem; letter-spacing: 0.12em; text-transform: uppercase; opacity: 0.9; margin-top: 4px; }
+    .benefit-item { display: flex; gap: 16px; margin-bottom: 28px; }
+    .benefit-icon { width: 40px; height: 40px; min-width: 40px; border-radius: 50%; background: var(--blush); display: flex; align-items: center; justify-content: center; font-size: 1.1rem; }
+    .benefit-item h4 { font-family: var(--font-b); font-size: 1rem; font-weight: 600; color: var(--dark); margin-bottom: 4px; }
+    .benefit-item p  { font-size: 0.9rem; margin: 0; }
+
+    /* ── Services Preview ──────────────────────────────────── */
+    .services-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px; }
+
+    /* ── Process ───────────────────────────────────────────── */
+    .process-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 40px; }
+    .process-connector {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      grid-column: 1 / -1;
+      height: 0;
+      position: relative;
+    }
+
+    /* ── CTA Banner ─────────────────────────────────────────── */
+    .cta-banner {
+      position: relative;
+      background: var(--dark);
+      padding: 100px 0;
+      text-align: center;
+      overflow: hidden;
+    }
+    .cta-banner::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(ellipse at center, rgba(184,149,106,0.2) 0%, transparent 70%);
+    }
+    .cta-banner-content { position: relative; z-index: 1; }
+    .cta-banner h2 { color: var(--white); max-width: 580px; margin: 0 auto 1rem; }
+    .cta-banner p  { color: rgba(255,255,255,0.65); max-width: 440px; margin: 0 auto 2.5rem; font-size: 1.05rem; }
+
+    @media (max-width: 768px) {
+      .pain-grid { grid-template-columns: 1fr; }
+      .services-grid { grid-template-columns: 1fr; }
+      .process-grid { grid-template-columns: 1fr; }
+    }
+
+    /* ── BOOKING MODAL ─────────────────────────────────────── */
+    .booking-modal-overlay {
+      display: none;
+      position: fixed;
+      inset: 0;
+      background: rgba(20,17,14,0.7);
+      z-index: 2000;
+      align-items: center;
+      justify-content: center;
+      padding: 1.5rem;
+    }
+    .booking-modal-overlay.active { display: flex; }
+    .booking-modal {
+      background: var(--cream);
+      border-radius: 4px;
+      padding: 2.8rem 2.5rem 2.5rem;
+      max-width: 520px;
+      width: 100%;
+      position: relative;
+      box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+      animation: modalIn 0.25s ease;
+    }
+    @keyframes modalIn {
+      from { opacity: 0; transform: translateY(16px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+    .booking-modal-close {
+      position: absolute;
+      top: 1rem; right: 1.2rem;
+      background: none; border: none;
+      font-size: 1.5rem; cursor: pointer;
+      color: var(--charcoal); opacity: 0.5;
+      line-height: 1;
+    }
+    .booking-modal-close:hover { opacity: 1; }
+    .booking-modal h3 {
+      font-family: var(--font-serif);
+      font-size: 1.6rem;
+      color: var(--charcoal);
+      margin-bottom: 0.4rem;
+    }
+    .booking-modal .modal-subtitle {
+      color: var(--text-muted);
+      font-size: 0.9rem;
+      margin-bottom: 1.8rem;
+    }
+    .modal-option-btn {
+      display: block;
+      width: 100%;
+      padding: 1rem 1.4rem;
+      margin-bottom: 0.75rem;
+      background: var(--white);
+      border: 1px solid rgba(184,149,106,0.35);
+      border-radius: 3px;
+      text-align: left;
+      cursor: pointer;
+      text-decoration: none;
+      color: var(--charcoal);
+      transition: border-color 0.2s, background 0.2s;
+      font-family: var(--font-sans);
+    }
+    .modal-option-btn:hover {
+      border-color: var(--gold);
+      background: #faf7f2;
+    }
+    .modal-option-btn .opt-title {
+      display: block;
+      font-weight: 600;
+      font-size: 0.95rem;
+      color: var(--charcoal);
+      margin-bottom: 0.15rem;
+    }
+    .modal-option-btn .opt-desc {
+      display: block;
+      font-size: 0.8rem;
+      color: var(--text-muted);
+    }
+    .modal-divider {
+      text-align: center;
+      font-size: 0.75rem;
+      color: var(--text-muted);
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      margin: 1.2rem 0 1rem;
+    }
+    .modal-stylist-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0.6rem;
+    }
+    .modal-stylist-btn {
+      display: block;
+      padding: 0.75rem 1rem;
+      background: var(--white);
+      border: 1px solid rgba(184,149,106,0.35);
+      border-radius: 3px;
+      text-align: center;
+      text-decoration: none;
+      color: var(--charcoal);
+      font-family: var(--font-sans);
+      font-size: 0.88rem;
+      font-weight: 600;
+      transition: border-color 0.2s, background 0.2s;
+    }
+    .modal-stylist-btn:hover {
+      border-color: var(--gold);
+      background: #faf7f2;
+      color: var(--gold);
+    }
+    @media (max-width: 480px) {
+      .booking-modal { padding: 2rem 1.5rem 1.8rem; }
+      .modal-stylist-grid { grid-template-columns: 1fr 1fr; }
+    }
+  </style>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "HairSalon",
+    "name": "Gorgeous Hair Design",
+    "alternateName": "Gorgeous Hair Design Piercings and Aesthetics",
+    "url": "https://www.gorgeoushairdesign.uk",
+    "logo": "https://www.gorgeoushairdesign.uk/images/hero-home.jpg",
+    "image": "https://www.gorgeoushairdesign.uk/images/hero-home.jpg",
+    "description": "Award-winning hair salon in Droitwich Spa offering expert cuts, colour, balayage, wedding hair, aesthetics, lashes, brows and body piercing. Trusted since 2006.",
+    "telephone": "+441905799055",
+    "email": "hello@gorgeoushairdesign.uk",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "20 Ombersley Street West",
+      "addressLocality": "Droitwich Spa",
+      "addressRegion": "Worcestershire",
+      "postalCode": "WR9 8HZ",
+      "addressCountry": "GB"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 52.2672351,
+      "longitude": -2.1553533
+    },
+    "openingHoursSpecification": [
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": "Tuesday", "opens": "09:00", "closes": "17:00" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": "Wednesday", "opens": "11:00", "closes": "20:00" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": "Thursday", "opens": "09:00", "closes": "17:00" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": "Friday", "opens": "09:00", "closes": "17:00" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "09:00", "closes": "14:00" }
+    ],
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "5.0",
+      "reviewCount": "297",
+      "bestRating": "5"
+    },
+    "sameAs": [
+      "https://www.facebook.com/GoRgEoUsHaIr20",
+      "https://www.instagram.com/hair_piercings_aesthetics_",
+      "https://www.tiktok.com/@gorgeoushairandpiercings",
+      "https://www.fresha.com/a/gorgeous-hair-design-droitwich-20-ombersley-street-west-btcfg0gh"
+    ],
+    "priceRange": "££",
+    "paymentAccepted": "Cash, Credit Card, Debit Card",
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Services",
+      "itemListElement": [
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Cuts & Styling" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Colour & Highlights" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Balayage" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Wedding & Prom Hair" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Aesthetics" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Lashes" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Brows & Waxing" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Body Piercing" } }
+      ]
+    }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.gorgeoushairdesign.uk/" }
+    ]
+  }
+  </script>
+</head>
+<body>
+
+  <!-- ── Navigation ─────────────────────────────────────── -->
+  <nav class="nav" role="navigation" aria-label="Main navigation">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">Gorgeous<span>.</span></a>
+      <ul class="nav-links" role="list">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="team.html">Team</a></li>
+        <li><a href="testimonials.html">Testimonials</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li class="nav-cta"><button onclick="openBookingModal()" class="btn btn-primary">Book Now</button></li>
+      </ul>
+      <button class="nav-burger" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <main>
+
+    <!-- ── 1. HERO ──────────────────────────────────────────── -->
+    <section class="hero" aria-label="Hero">
+      <img class="hero-bg" src="images/hero.png" alt="Gorgeous Hair Design salon interior" loading="eager">
+      <div class="hero-overlay"></div>
+      <div class="container">
+        <div class="hero-content">
+          <div class="hero-badge"><span class="material-icons-outlined" style="font-size: 0.9em; vertical-align: middle;">verified</span> Trusted Since 2006 · Droitwich Spa</div>
+          <h1>Where Great Hair<br><em>Begins.</em></h1>
+          <p>Expert cuts, colour, and styling in the heart of Droitwich. Trusted by hundreds of clients across Worcestershire for over 18 years.</p>
+          <div class="cta-group">
+            <button onclick="openBookingModal()" class="btn btn-primary">Book an Appointment</button>
+            <a href="services.html" class="btn btn-outline">Explore Services</a>
+          </div>
+          <div class="hero-ratings">
+            <a href="https://www.fresha.com/a/gorgeous-hair-design-droitwich-20-ombersley-street-west-btcfg0gh?pId=271809&reviews=true" target="_blank" rel="noopener" class="hero-rating-item">
+              <span class="hero-rating-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+              <span class="hero-rating-score">5.0</span>
+              <span class="hero-rating-label">297 reviews on Fresha</span>
+            </a>
+            <span class="hero-rating-divider"></span>
+            <a href="https://www.google.com/maps/place/Gorgeous+Hair+Design+Piercings+and+Aesthetics+Droitwich/@52.2672351,-2.1553533,17z/data=!4m8!3m7!1s0x4870edf00818c253:0x272aa14ac5d4ca6e!8m2!3d52.2672351!4d-2.1553533!9m1!1b1!16s%2Fg%2F1ts1m23b" target="_blank" rel="noopener" class="hero-rating-item">
+              <span class="hero-rating-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+              <span class="hero-rating-score">4.9</span>
+              <span class="hero-rating-label">62 reviews on Google</span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="hero-scroll" aria-hidden="true">
+        <span></span>
+        Scroll
+      </div>
+    </section>
+
+    <!-- ── 2. STATS ──────────────────────────────────────────── -->
+    <section class="section--dark" aria-label="Our achievements">
+      <div class="stats-bar">
+        <div class="stat fade-up">
+          <div class="stat-number" data-count="18" data-suffix="+">18+</div>
+          <div class="stat-label">Years in Business</div>
+        </div>
+        <div class="stat fade-up">
+          <div class="stat-number" data-count="2000" data-suffix="+">2000+</div>
+          <div class="stat-label">Happy Clients</div>
+        </div>
+        <div class="stat fade-up">
+          <div class="stat-number" data-count="6">6</div>
+          <div class="stat-label">Expert Services</div>
+        </div>
+        <div class="stat fade-up">
+          <div class="stat-number">5★</div>
+          <div class="stat-label">Average Rating</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── 3. PAIN POINTS ────────────────────────────────────── -->
+    <section class="section section--cream" id="why" aria-labelledby="pain-heading">
+      <div class="container">
+        <div class="section-header fade-up">
+          <span class="eyebrow">The Gorgeous Difference</span>
+          <h2 id="pain-heading">Where every visit feels special</h2>
+          <p>We believe great hair starts with genuine care. From the moment you walk through our door, you'll feel the difference that 20 years of passion makes.</p>
+          <div class="divider"></div>
+        </div>
+        <div class="pain-grid">
+          <div class="pain-item fade-up">
+            <div class="pain-icon"><span class="material-icons-outlined">auto_awesome</span></div>
+            <div>
+              <h4>We really listen</h4>
+              <p>Every appointment starts with a proper consultation. We take the time to understand exactly what you want and make it happen.</p>
+            </div>
+          </div>
+          <div class="pain-item fade-up">
+            <div class="pain-icon"><span class="material-icons-outlined">favorite</span></div>
+            <div>
+              <h4>Your time matters</h4>
+              <p>No rushing, no cutting corners. You get our full attention from start to finish because you deserve nothing less.</p>
+            </div>
+          </div>
+          <div class="pain-item fade-up">
+            <div class="pain-icon"><span class="material-icons-outlined">handshake</span></div>
+            <div>
+              <h4>A team you can trust</h4>
+              <p>Our stylists have been with us for years because they love what they do. You'll find your person and keep coming back.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── 4. SOLUTION / BENEFITS ────────────────────────────── -->
+    <section class="section" aria-labelledby="solution-heading">
+      <div class="container">
+        <div class="grid-2">
+          <div class="solution-img fade-up">
+            <img src="images/about-story.jpeg" alt="Expert hairstylist at work in Droitwich salon" loading="lazy">
+            <div class="solution-img-badge">
+              <div class="num">18<span style="font-size:1.4rem">+</span></div>
+              <div class="lbl">Years of<br>Expertise</div>
+            </div>
+          </div>
+          <div class="fade-up">
+            <span class="eyebrow">Why Choose Gorgeous</span>
+            <h2 id="solution-heading">A salon that truly listens</h2>
+            <div class="divider divider--left" style="margin-bottom: 28px;"></div>
+            <div class="benefit-item">
+              <div class="benefit-icon"><span class="material-icons-outlined">chat_bubble_outline</span></div>
+              <div>
+                <h4>In-depth consultation, every time</h4>
+                <p>We take time before every appointment to understand your vision, lifestyle and hair goals — not just your brief.</p>
+              </div>
+            </div>
+            <div class="benefit-item">
+              <div class="benefit-icon"><span class="material-icons-outlined">content_cut</span></div>
+              <div>
+                <h4>18+ years of specialist skill</h4>
+                <p>From precision cuts to complex colour, our team brings deep technical expertise to every service.</p>
+              </div>
+            </div>
+            <div class="benefit-item">
+              <div class="benefit-icon"><span class="material-icons-outlined">spa</span></div>
+              <div>
+                <h4>A relaxed, unhurried experience</h4>
+                <p>No rush, no shortcuts. Your appointment is yours. We create a space where you can breathe, relax and be looked after.</p>
+              </div>
+            </div>
+            <a href="about.html" class="btn btn-dark" style="margin-top: 12px;">Our Story</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── 5. SERVICES PREVIEW ──────────────────────────────── -->
+    <section class="section section--cream" aria-labelledby="services-heading">
+      <div class="container">
+        <div class="section-header fade-up">
+          <span class="eyebrow">What We Offer</span>
+          <h2 id="services-heading">Services crafted for you</h2>
+          <p>From everyday cuts to transformational colour work, bridal hair to body piercing — everything under one roof in Droitwich.</p>
+          <div class="divider"></div>
+        </div>
+        <div class="services-grid">
+          <div class="service-card fade-up">
+            <div class="service-card-img">
+              <img src="images/services-cuts.jpg" alt="Hair cutting and styling" loading="lazy">
+            </div>
+            <div class="service-card-body">
+              <h3>Cuts &amp; Styling</h3>
+              <p>Precision cuts tailored to your face shape, lifestyle and personal style. Blow-dry, finish, and style included.</p>
+              <span class="service-price">From £30</span>
+            </div>
+          </div>
+          <div class="service-card fade-up">
+            <div class="service-card-img">
+              <img src="images/services-colour.jpg" alt="Hair colour and highlights" loading="lazy">
+            </div>
+            <div class="service-card-body">
+              <h3>Colour &amp; Highlights</h3>
+              <p>Full colour, highlights, lowlights and toner. Vibrant, long-lasting results using premium colour products.</p>
+              <span class="service-price">From £55</span>
+            </div>
+          </div>
+          <div class="service-card fade-up">
+            <div class="service-card-img">
+              <img src="images/services-balayage.jpg" alt="Balayage hair technique" loading="lazy">
+            </div>
+            <div class="service-card-body">
+              <h3>Balayage</h3>
+              <p>Sun-kissed, natural-looking colour painted freehand for a seamless, low-maintenance finish.</p>
+              <span class="service-price">From £85</span>
+            </div>
+          </div>
+          <div class="service-card fade-up">
+            <div class="service-card-img">
+              <img src="images/services-wedding.jpg" alt="Wedding and bridal hair" loading="lazy">
+            </div>
+            <div class="service-card-body">
+              <h3>Wedding Hair</h3>
+              <p>Bridal and occasion hair tailored to your vision. Trial appointments and full party packages available.</p>
+              <span class="service-price">From £75</span>
+            </div>
+          </div>
+          <div class="service-card fade-up">
+            <div class="service-card-img">
+              <img src="images/services-aesthetics.jpg" alt="Aesthetics treatments" loading="lazy">
+            </div>
+            <div class="service-card-body">
+              <h3>Aesthetics</h3>
+              <p>Professional aesthetic treatments delivered by qualified practitioners. Natural results in a safe, clinical environment.</p>
+              <span class="service-price">From £50</span>
+            </div>
+          </div>
+          <div class="service-card fade-up">
+            <div class="service-card-img">
+              <img src="images/services-piercing.jpg" alt="Body piercing" loading="lazy">
+            </div>
+            <div class="service-card-body">
+              <h3>Body Piercing</h3>
+              <p>All above-waist body piercings carried out by our expert piercer with full aftercare guidance provided.</p>
+              <span class="service-price">From £25</span>
+            </div>
+          </div>
+        </div>
+        <div class="text-center" style="margin-top: 48px;">
+          <a href="services.html" class="btn btn-dark">View All Services &amp; Pricing</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── 6. HOW IT WORKS ───────────────────────────────────── -->
+    <section class="section" aria-labelledby="process-heading">
+      <div class="container">
+        <div class="section-header fade-up">
+          <span class="eyebrow">Simple &amp; Easy</span>
+          <h2 id="process-heading">How it works</h2>
+          <p>Getting the hair you've always wanted is simpler than you think. Three easy steps to a transformation.</p>
+          <div class="divider"></div>
+        </div>
+        <div class="process-grid">
+          <div class="process-step fade-up">
+            <div class="process-number">1</div>
+            <h3>Book Online</h3>
+            <p>Choose your service, preferred stylist and a time that suits you — 24/7 from any device.</p>
+          </div>
+          <div class="process-step fade-up">
+            <div class="process-number">2</div>
+            <h3>Free Consultation</h3>
+            <p>Every appointment begins with a proper consultation. We listen, advise and make sure we're perfectly aligned before we start.</p>
+          </div>
+          <div class="process-step fade-up">
+            <div class="process-number">3</div>
+            <h3>Walk Out Transformed</h3>
+            <p>Leave feeling like the best version of yourself — with a style and colour that works for your life, not just the salon.</p>
+          </div>
+        </div>
+        <div class="text-center" style="margin-top: 52px;">
+          <button onclick="openBookingModal()" class="btn btn-primary">Book Your Appointment</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── 7. TESTIMONIALS ───────────────────────────────────── -->
+    <section class="section section--cream" aria-labelledby="reviews-heading">
+      <div class="container">
+        <div class="section-header fade-up">
+          <span class="eyebrow">Client Love</span>
+          <h2 id="reviews-heading">What our clients say</h2>
+          <p>Trusted by clients across Droitwich and Worcestershire for over 18 years.</p>
+          <div class="divider"></div>
+        </div>
+        <div class="grid-3">
+          <div class="testimonial fade-up">
+            <div class="stars">★★★★★</div>
+            <p>"I've been coming to Gorgeous for years and I genuinely wouldn't trust my hair to anyone else. Kylie always takes the time to understand exactly what I want and the results are consistently amazing."</p>
+            <div class="testimonial-author">
+              <img src="images/testimonial-sarah.jpg" alt="Client Sarah M" loading="lazy">
+              <div>
+                <div class="testimonial-author-name">Sarah M.</div>
+                <div class="testimonial-author-label">Loyal client since 2012</div>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial fade-up">
+            <div class="stars">★★★★★</div>
+            <p>"Had my balayage done here and it's the best colour I've ever had. The consultation was thorough, they really listened, and I walked out feeling incredible. Will absolutely be back."</p>
+            <div class="testimonial-author">
+              <img src="images/testimonial-emma.jpg" alt="Client Emma T" loading="lazy">
+              <div>
+                <div class="testimonial-author-name">Emma T.</div>
+                <div class="testimonial-author-label">Droitwich</div>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial fade-up">
+            <div class="stars">★★★★★</div>
+            <p>"The whole experience was brilliant — from booking to the finish. The piercing service was incredibly professional, clean and friendly. I felt completely at ease the entire time."</p>
+            <div class="testimonial-author">
+              <img src="images/testimonial-jess.jpg" alt="Client Jess B" loading="lazy">
+              <div>
+                <div class="testimonial-author-name">Jess B.</div>
+                <div class="testimonial-author-label">Worcestershire</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── 8. ABOUT / CREDIBILITY ──────────────────────────── -->
+    <section class="section" aria-labelledby="about-teaser-heading">
+      <div class="container">
+        <div class="grid-2 reverse-mobile">
+          <div class="fade-up">
+            <span class="eyebrow">About Us</span>
+            <h2 id="about-teaser-heading">Droitwich's trusted salon since 2006</h2>
+            <div class="divider divider--left" style="margin-bottom: 28px;"></div>
+            <p style="font-size:1.05rem; color: var(--text); margin-bottom: 1rem;">Gorgeous Hair Design opened its doors in Droitwich Spa in 2006 with one simple belief — that every client deserves to feel genuinely seen, heard and cared for.</p>
+            <p style="font-size:1.05rem; color: var(--text); margin-bottom: 2rem;">Eighteen years on, that belief drives everything we do. Our team of experienced stylists, piercers and aesthetics professionals work together to deliver results that go beyond expectations.</p>
+            <a href="about.html" class="btn btn-ghost">Read Our Story</a>
+          </div>
+          <div class="solution-img fade-up">
+            <img src="images/hero-inner.jpg" alt="Gorgeous Hair Design salon Droitwich" loading="lazy">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── 9. FINAL CTA ──────────────────────────────────────── -->
+    <section class="cta-banner" aria-labelledby="cta-heading">
+      <div class="cta-banner-content container">
+        <span class="eyebrow">Ready to Begin?</span>
+        <h2 id="cta-heading">Your best hair day starts here</h2>
+        <p>Join hundreds of clients across Droitwich and Worcestershire who trust Gorgeous Hair Design.</p>
+        <div class="cta-group" style="justify-content: center;">
+          <button onclick="openBookingModal()" class="btn btn-primary">Book an Appointment</button>
+          <a href="tel:01905799055" class="btn btn-outline"><span class="material-icons-outlined" style="font-size: 1.1em; vertical-align: middle; margin-right: 4px;">call</span> 01905 799055</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ── Footer ──────────────────────────────────────────── -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-logo">Gorgeous<span>.</span></div>
+          <p class="footer-tagline">Gorgeous Hair Design, Aesthetics and Body Piercing. Expert hair and beauty services in the heart of Droitwich Spa, Worcestershire. Trusted since 2006.</p>
+          <div class="footer-social">
+            <a href="https://www.google.com/maps/place/Gorgeous+Hair+Design+Piercings+and+Aesthetics+Droitwich/@52.2672351,-2.1553533,898m/data=!3m2!1e3!4b1!4m6!3m5!1s0x4870edf00818c253:0x272aa14ac5d4ca6e!8m2!3d52.2672351!4d-2.1553533!16s%2Fg%2F1ts1m23b?entry=ttu" aria-label="Google Maps" target="_blank" rel="noopener"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 010-5 2.5 2.5 0 010 5z"/></svg></a>
+            <a href="https://www.facebook.com/GoRgEoUsHaIr20" aria-label="Facebook" target="_blank" rel="noopener"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg></a>
+            <a href="https://www.instagram.com/hair_piercings_aesthetics_?igsh=MTRsN3d5aDYxdGZ3MA%3D%3D" aria-label="Instagram" target="_blank" rel="noopener"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg></a>
+            <a href="https://www.tiktok.com/@gorgeoushairandpiercings" aria-label="TikTok" target="_blank" rel="noopener"><svg width="16" height="16" viewBox="0 0 448 512" fill="currentColor"><path d="M448 209.91a210.06 210.06 0 01-122.77-39.25v178.72A162.55 162.55 0 11185 188.31v89.89a74.62 74.62 0 1052.23 71.18V0h88a121.18 121.18 0 00.86 22.17A122.18 122.18 0 00381 102.39a121.43 121.43 0 0067 20.14z"/></svg></a>
+          </div>
+        </div>
+        <div>
+          <h4>Navigate</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="team.html">Meet the Team</a></li>
+            <li><a href="testimonials.html">Testimonials</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Services</h4>
+          <ul class="footer-links">
+            <li><a href="services.html#cuts">Cuts &amp; Styling</a></li>
+            <li><a href="services.html#colour">Colour &amp; Highlights</a></li>
+            <li><a href="services.html#balayage">Balayage</a></li>
+            <li><a href="services.html#wedding">Wedding Hair</a></li>
+            <li><a href="services.html#microneedling">Micro Needling</a></li>
+            <li><a href="services.html#antiwrinkle">Anti-Wrinkle</a></li>
+            <li><a href="services.html#dermalfiller">Dermal Filler</a></li>
+            <li><a href="services.html#skinboosters">Skin Boosters</a></li>
+            <li><a href="services.html#vitamins">Vitamin Injections</a></li>
+            <li><a href="services.html#lashes">Lashes</a></li>
+            <li><a href="services.html#brows">Brows &amp; Waxing</a></li>
+            <li><a href="services.html#piercing">Body Piercing</a></li>
+          </ul>
+        </div>
+        <div class="footer-contact">
+          <h4>Visit Us</h4>
+          <p>20 Ombersley Street West<br>Droitwich Spa<br>Worcestershire WR9 8HZ</p>
+          <p style="margin-top: 12px;"><a href="tel:01905799055">01905 799055</a></p>
+          <p><a href="mailto:hello@gorgeoushairdesign.uk">hello@gorgeoushairdesign.uk</a></p>
+          <p style="margin-top: 12px; font-size: 0.83rem; color: rgba(255,255,255,0.35);">
+            Mon: Beautician Only<br>
+            Tue: 9am–5pm<br>
+            Wed: 11am–8pm<br>
+            Thu: 9am–5pm<br>
+            Fri: 9am–5pm<br>
+            Sat: 9am–2pm<br>
+            Sunday: Closed
+          </p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Gorgeous Hair Design. All rights reserved.</p>
+        <p><a href="privacy.html">Privacy Policy</a> &nbsp;|&nbsp; <a href="#" onclick="openBookingModal(); return false;">Book Now</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+
+  <!-- ── BOOKING MODAL ──────────────────────────────────────── -->
+  <div class="booking-modal-overlay" id="bookingModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="booking-modal">
+      <button class="booking-modal-close" onclick="closeBookingModal()" aria-label="Close">&times;</button>
+      <h3 id="modalTitle">Book an Appointment</h3>
+      <p class="modal-subtitle">How would you like to book?</p>
+
+      <a href="https://www.fresha.com/book-now/gorgeous-hair-design-wdzz9skf/services?lid=291251&share=true" target="_blank" rel="noopener" class="modal-option-btn">
+        <span class="opt-title">View Booking Page</span>
+        <span class="opt-desc">Browse all services and available times</span>
+      </a>
+
+      <div class="modal-divider">or book directly with a stylist</div>
+
+      <div class="modal-stylist-grid">
+        <a href="https://www.fresha.com/book-now/gorgeous-hair-design-wdzz9skf/services?lid=291251&eid=863251&share=true&pId=271809" target="_blank" rel="noopener" class="modal-stylist-btn"><span class="material-icons-outlined" style="font-size: 1.1em; vertical-align: middle; margin-right: 4px;">calendar_today</span> Kylie</a>
+        <a href="https://www.fresha.com/book-now/gorgeous-hair-design-wdzz9skf/services?lid=291251&eid=863279&share=true&pId=271809" target="_blank" rel="noopener" class="modal-stylist-btn"><span class="material-icons-outlined" style="font-size: 1.1em; vertical-align: middle; margin-right: 4px;">calendar_today</span> Jen</a>
+        <a href="https://www.fresha.com/book-now/gorgeous-hair-design-wdzz9skf/services?lid=291251&eid=1614371&share=true&pId=271809" target="_blank" rel="noopener" class="modal-stylist-btn"><span class="material-icons-outlined" style="font-size: 1.1em; vertical-align: middle; margin-right: 4px;">calendar_today</span> Chloe</a>
+        <a href="https://www.fresha.com/book-now/gorgeous-hair-design-wdzz9skf/services?lid=291251&eid=3251999&share=true&pId=271809" target="_blank" rel="noopener" class="modal-stylist-btn"><span class="material-icons-outlined" style="font-size: 1.1em; vertical-align: middle; margin-right: 4px;">calendar_today</span> Meg</a>
+        <a href="tel:+447979896616" class="modal-stylist-btn"><span class="material-icons-outlined" style="font-size: 1.1em; vertical-align: middle; margin-right: 4px;">call</span> Annie</a>
+        <a href="tel:+447973859078" class="modal-stylist-btn"><span class="material-icons-outlined" style="font-size: 1.1em; vertical-align: middle; margin-right: 4px;">call</span> Lauren</a>
+        <a href="tel:+447860846747" class="modal-stylist-btn"><span class="material-icons-outlined" style="font-size: 1.1em; vertical-align: middle; margin-right: 4px;">call</span> Gracie</a>
+        <a href="tel:+447868131015" class="modal-stylist-btn"><span class="material-icons-outlined" style="font-size: 1.1em; vertical-align: middle; margin-right: 4px;">call</span> Cerys</a>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function openBookingModal() {
+      document.getElementById('bookingModal').classList.add('active');
+      document.body.style.overflow = 'hidden';
+    }
+    function closeBookingModal() {
+      document.getElementById('bookingModal').classList.remove('active');
+      document.body.style.overflow = '';
+    }
+    // Close on overlay click
+    document.getElementById('bookingModal').addEventListener('click', function(e) {
+      if (e.target === this) closeBookingModal();
+    });
+    // Close on Escape key
+    document.addEventListener('keydown', function(e) {
+      if (e.key === 'Escape') closeBookingModal();
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | Droitwich Hair Salon Since 2006 | Gorgeous Hair Design</title>
+    <meta name="description" content="Learn about Gorgeous Hair Design, Droitwich's trusted hair salon since 2006. Meet our passionate team of stylists, beauticians and piercers dedicated to making you look and feel amazing.">
+    <link rel="canonical" href="https://www.gorgeoushairdesign.uk/about.html">
+    <meta property="og:title" content="About Us | Droitwich Hair Salon Since 2006 | Gorgeous Hair Design">
+    <meta property="og:description" content="Droitwich's trusted hair salon since 2006. Meet our passionate team dedicated to making you look and feel amazing.">
+    <meta property="og:url" content="https://www.gorgeoushairdesign.uk/about.html">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://www.gorgeoushairdesign.uk/images/about-story.jpg">
+    <meta property="og:locale" content="en_GB">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="About Us | Droitwich Hair Salon Since 2006 | Gorgeous Hair Design">
+    <meta name="twitter:description" content="Droitwich's trusted hair salon since 2006. Meet our passionate team dedicated to making you look and feel amazing.">
+    <meta name="twitter:image" content="https://www.gorgeoushairdesign.uk/images/about-story.jpg">
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Jost:wght@300;400;500;600&family=Material+Icons+Outlined&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+    <style>
+        .hero {
+            background: linear-gradient(rgba(26, 26, 26, 0.5), rgba(26, 26, 26, 0.5)), url('images/hero-inner.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: var(--cream);
+        }
+
+        .hero-content h1 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 3.5rem;
+            font-weight: 400;
+            margin-bottom: 0.5rem;
+        }
+
+        .hero-content p {
+            font-size: 1.1rem;
+            color: var(--blush);
+        }
+
+        .section {
+            padding: 60px 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .grid-2 {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            align-items: center;
+        }
+
+        .grid-2 img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            object-fit: cover;
+        }
+
+        .section h2 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 2.5rem;
+            font-weight: 400;
+            margin-bottom: 30px;
+            color: var(--dark);
+        }
+
+        .section h3 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.8rem;
+            font-weight: 400;
+            margin-bottom: 15px;
+            color: var(--dark);
+        }
+
+        .section p {
+            font-family: 'Jost', sans-serif;
+            font-size: 1rem;
+            line-height: 1.8;
+            color: var(--text-light);
+            margin-bottom: 15px;
+        }
+
+        .values-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+        }
+
+        .value-card {
+            background: var(--cream);
+            padding: 30px;
+            border-radius: 8px;
+            text-align: center;
+            border: 1px solid var(--border);
+            transition: transform 0.3s ease;
+        }
+
+        .value-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .value-card h3 {
+            color: var(--gold);
+            margin-bottom: 15px;
+            font-size: 1.4rem;
+        }
+
+        .value-card p {
+            font-size: 0.95rem;
+            color: var(--text-light);
+        }
+
+        .quote-section {
+            background: var(--blush);
+            padding: 60px 40px;
+            text-align: center;
+            margin: 60px 0;
+            border-radius: 8px;
+        }
+
+        .quote-section blockquote {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.8rem;
+            font-style: italic;
+            color: var(--dark);
+            margin: 0;
+            line-height: 1.8;
+        }
+
+        .quote-section .attribution {
+            font-family: 'Jost', sans-serif;
+            font-size: 1rem;
+            color: var(--text-light);
+            margin-top: 20px;
+        }
+
+        .cta-section {
+            background: var(--dark);
+            color: var(--cream);
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        .cta-section h2 {
+            color: var(--cream);
+            margin-bottom: 30px;
+        }
+
+        .cta-section p {
+            color: var(--blush);
+            font-size: 1.1rem;
+            margin-bottom: 30px;
+        }
+
+        .btn-primary {
+            display: inline-block;
+            background: var(--gold);
+            color: var(--dark);
+            padding: 12px 40px;
+            text-decoration: none;
+            border-radius: 4px;
+            font-family: 'Jost', sans-serif;
+            font-weight: 600;
+            transition: background 0.3s ease;
+            border: none;
+            cursor: pointer;
+            font-size: 1rem;
+        }
+
+        .btn-primary:hover {
+            background: #a8845a;
+        }
+
+        .fade-up {
+            opacity: 0;
+            animation: fadeUp 0.8s ease-out forwards;
+        }
+
+        @keyframes fadeUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .grid-2.reverse {
+            direction: rtl;
+        }
+
+        .grid-2.reverse > * {
+            direction: ltr;
+        }
+
+        @media (max-width: 768px) {
+            .grid-2 {
+                grid-template-columns: 1fr;
+            }
+
+            .values-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .hero-content h1 {
+                font-size: 2rem;
+            }
+
+            .section h2 {
+                font-size: 1.8rem;
+            }
+        }
+    </style>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.gorgeoushairdesign.uk/" },
+      { "@type": "ListItem", "position": 2, "name": "About Us", "item": "https://www.gorgeoushairdesign.uk/about.html" }
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "AboutPage",
+    "name": "About Gorgeous Hair Design",
+    "url": "https://www.gorgeoushairdesign.uk/about.html",
+    "description": "Gorgeous Hair Design has been Droitwich's trusted hair salon since 2006. Founded by Kylie Kelly, we offer expert cuts, colour, balayage, aesthetics and body piercing.",
+    "mainEntity": {
+      "@type": "HairSalon",
+      "name": "Gorgeous Hair Design",
+      "foundingDate": "2006",
+      "founder": { "@type": "Person", "name": "Kylie Kelly" },
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "20 Ombersley Street West",
+        "addressLocality": "Droitwich Spa",
+        "addressRegion": "Worcestershire",
+        "postalCode": "WR9 8HZ",
+        "addressCountry": "GB"
+      }
+    }
+  }
+  </script>
+</head>
+<body>
+  <nav class="nav" role="navigation" aria-label="Main navigation">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">Gorgeous<span>.</span></a>
+      <ul class="nav-links" role="list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html" class="active">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="team.html">Team</a></li>
+        <li><a href="testimonials.html">Testimonials</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li class="nav-cta"><button onclick="openBookingModal()" class="btn btn-primary">Book Now</button></li>
+      </ul>
+      <button class="nav-burger" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content fade-up">
+            <h1>About Us</h1>
+            <p>18 years of passion, expertise and care in Droitwich</p>
+        </div>
+    </section>
+
+    <!-- Our Story Section -->
+    <section class="section">
+        <div class="container">
+            <div class="grid-2 fade-up">
+                <div>
+                    <img src="images/about-story.jpeg" alt="Hair salon interior" loading="lazy">
+                </div>
+                <div>
+                    <h2>Our Story</h2>
+                    <p>Gorgeous Hair Design was founded in 2006 by Kylie Kelly with a simple vision: to create a sanctuary where hair care meets genuine passion. What started as a small independent salon has grown into a beloved destination for clients across Droitwich and beyond, all while maintaining the personal touch that defines us.</p>
+                    <p>Over 18 years, we've developed a deep understanding of what great hair care means. It's not just about the technical skill—though we never compromise on that. It's about listening to our clients, understanding their needs, and delivering results that exceed expectations. Every appointment is an opportunity to build relationships and earn trust.</p>
+                    <p>Today, we're proud to offer a comprehensive range of services under one roof: expert hair cutting and styling, vibrant colour and balayage, beautiful wedding and special occasion hair, professional aesthetics treatments, and qualified body piercing. Our team of talented stylists and specialists bring dedication, creativity, and care to every client who walks through our door.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Values Section -->
+    <section class="section" style="background: var(--cream);">
+        <div class="container">
+            <h2 style="text-align: center; margin-bottom: 40px; color: var(--dark);">Our Values</h2>
+            <div class="values-grid fade-up">
+                <div class="value-card">
+                    <h3>Excellence</h3>
+                    <p>We never cut corners. Every service is delivered to the highest standard, with meticulous attention to detail and a commitment to quality that defines our work.</p>
+                </div>
+                <div class="value-card">
+                    <h3>Care</h3>
+                    <p>Every client is our priority. We take time to understand your needs, offer honest advice, and create a welcoming space where you feel valued and heard.</p>
+                </div>
+                <div class="value-card">
+                    <h3>Passion</h3>
+                    <p>We love what we do. Our team's enthusiasm for hair, beauty, and helping you look and feel your best shines through in everything we create.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quote Section -->
+    <section class="quote-section fade-up">
+        <blockquote>We believe great hair can change how you feel about yourself. That's why we treat every appointment as an opportunity to make someone's day.</blockquote>
+        <p class="attribution">— Kylie Kelly, Founder</p>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <h2 class="fade-up">Come and Meet Us</h2>
+            <p class="fade-up">Ready to experience the Gorgeous Hair Design difference? Book your appointment today or give us a call.</p>
+            <div class="fade-up">
+                <a href="contact.html" class="btn-primary">Book Now</a>
+                <p style="margin-top: 20px; font-size: 1.1rem;">01905 799055</p>
+            </div>
+        </div>
+    </section>
+
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-logo">Gorgeous<span>.</span></div>
+          <p class="footer-tagline">Gorgeous Hair Design, Aesthetics and Body Piercing. Expert hair and beauty services in the heart of Droitwich Spa, Worcestershire. Trusted since 2006.</p>
+          <div class="footer-social">
+            <a href="https://www.google.com/maps/place/Gorgeous+Hair+Design+Piercings+and+Aesthetics+Droitwich/@52.2672351,-2.1553533,898m/data=!3m2!1e3!4b1!4m6!3m5!1s0x4870edf00818c253:0x272aa14ac5d4ca6e!8m2!3d52.2672351!4d-2.1553533!16s%2Fg%2F1ts1m23b?entry=ttu" aria-label="Google Maps" target="_blank" rel="noopener"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 010-5 2.5 2.5 0 010 5z"/></svg></a>
+            <a href="https://www.facebook.com/GoRgEoUsHaIr20" aria-label="Facebook" target="_blank" rel="noopener"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg></a>
+            <a href="https://www.instagram.com/hair_piercings_aesthetics_?igsh=MTRsN3d5aDYxdGZ3MA%3D%3D" aria-label="Instagram" target="_blank" rel="noopener"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg></a>
+            <a href="https://www.tiktok.com/@gorgeoushairandpiercings" aria-label="TikTok" target="_blank" rel="noopener"><svg width="16" height="16" viewBox="0 0 448 512" fill="currentColor"><path d="M448 209.91a210.06 210.06 0 01-122.77-39.25v178.72A162.55 162.55 0 11185 188.31v89.89a74.62 74.62 0 1052.23 71.18V0h88a121.18 121.18 0 00.86 22.17A122.18 122.18 0 00381 102.39a121.43 121.43 0 0067 20.14z"/></svg></a>
+          </div>
+        </div>
+        <div>
+          <h4>Navigate</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="team.html">Meet the Team</a></li>
+            <li><a href="testimonials.html">Testimonials</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Services</h4>
+          <ul class="footer-links">
+            <li><a href="services.html#cuts">Cuts &amp; Styling</a></li>
+            <li><a href="services.html#colour">Colour &amp; Highlights</a></li>
+            <li><a href="services.html#balayage">Balayage</a></li>
+            <li><a href="services.html#wedding">Wedding Hair</a></li>
+            <li><a href="services.html#microneedling">Micro Needling</a></li>
+            <li><a href="services.html#antiwrinkle">Anti-Wrinkle</a></li>
+            <li><a href="services.html#dermalfiller">Dermal Filler</a></li>
+            <li><a href="services.html#skinboosters">Skin Boosters</a></li>
+            <li><a href="services.html#vitamins">Vitamin Injections</a></li>
+            <li><a href="services.html#lashes">Lashes</a></li>
+            <li><a href="services.html#brows">Brows &amp; Waxing</a></li>
+            <li><a href="services.html#piercing">Body Piercing</a></li>
+          </ul>
+        </div>
+        <div class="footer-contact">
+          <h4>Visit Us</h4>
+          <p>20 Ombersley Street West<br>Droitwich Spa<br>Worcestershire WR9 8HZ</p>
+          <p style="margin-top: 12px;"><a href="tel:01905799055">01905 799055</a></p>
+          <p><a href="mailto:hello@gorgeoushairdesign.uk">hello@gorgeoushairdesign.uk</a></p>
+          <p style="margin-top: 12px; font-size: 0.83rem; color: rgba(255,255,255,0.35);">
+            Mon: Beautician Only<br>
+            Tue: 9am–5pm<br>
+            Wed: 11am–8pm<br>
+            Thu: 9am–5pm<br>
+            Fri: 9am–5pm<br>
+            Sat: 9am–2pm<br>
+            Sunday: Closed
+          </p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Gorgeous Hair Design. All rights reserved.</p>
+        <p><a href="privacy.html">Privacy Policy</a> &nbsp;|&nbsp; <a href="#" onclick="openBookingModal(); return false;">Book Now</a></p>
+      </div>
+    </div>
+  </footer>
+
+    <script src="js/main.js"></script>
+
+  <!-- ── BOOKING MODAL ──────────────────────────────────────── -->
+  <div class="booking-modal-overlay" id="bookingModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="booking-modal">
+      <button class="booking-modal-close" onclick="closeBookingModal()" aria-label="Close">&times;</button>
+      <h3 id="modalTitle">Book an Appointment</h3>
+      <p class="modal-subtitle">How would you like to book?</p>
+      <a href="https://www.fresha.com/book-now/gorgeous-hair-design-wdzz9skf/services?lid=291251&share=true" target="_blank" rel="noopener" class="modal-option-btn">
+        <span class="opt-title">View Booking Page</span>
+        <span class="opt-desc">Browse all services and available times</span>
+      </a>
+      <div class="modal-divider">or book directly with a stylist</div>
+      <div class="modal-stylist-grid">
+        <a href="https://www.fresha.com/book-now/gorgeous-hair-design-wdzz9skf/services?lid=291251&eid=863251&share=true&pId=271809" target="_blank" rel="noopener" class="modal-stylist-btn"><span class="material-icons-outlined" style="font-size: 1.1em; vertical-align: middle; margin-right: 4px;">calendar_today</span> Kylie</a>
+        <a href="https://www.fresha.com/book-now/gorgeous-hair-design-wdzz9skf/services?lid=291251&eid=863279&share=true&pId=271809" target="_blank" rel="noopener" class="modal-stylist-btn"><span class="material-icons-outlined" style="font-size: 1.1em; vertical-align: middle; margin-right: 4px;">calendar_today</span> Jen</a>
+        <a href="https://www.fresha.com/book-now/gorgeous-hair-design-wdzz9skf/services?lid=291251&eid=1614371&share=true&pId=271809" target="_blank" rel="noopener" class="modal-stylist-btn"><span class="material-icons-outlined" style="font-size: 1.1em; vertical-align: middle; margin-right: 4px;">calendar_today</span> Chloe</a>
+        <a href="https://www.fresha.com/book-now/gorgeous-hair-design-wdzz9skf/services?lid=291251&eid=3251999&share=true&pId=271809" target="_blank" rel="noopener" class="modal-stylist-btn"><span class="material-icons-outlined" style="font-size: 1.1em; vertical-align: middle; margin-right: 4px;">calendar_today</span> Meg</a>
+        <a href="tel:+447979896616" class="modal-stylist-btn"><span class="material-icons-outlined" style="font-size: 1.1em; vertical-align: middle; margin-right: 4px;">call</span> Annie</a>
+        <a href="tel:+447973859078" class="modal-stylist-btn"><span class="material-icons-outlined" style="font-size: 1.1em; vertical-align: middle; margin-right: 4px;">call</span> Lauren</a>
+        <a href="tel:+447860846747" class="modal-stylist-btn"><span class="material-icons-outlined" style="font-size: 1.1em; vertical-align: middle; margin-right: 4px;">call</span> Gracie</a>
+        <a href="tel:+447868131015" class="modal-stylist-btn"><span class="material-icons-outlined" style="font-size: 1.1em; vertical-align: middle; margin-right: 4px;">call</span> Cerys</a>
+      </div>
+    </div>
+  </div>
+  <script>
+    function openBookingModal() {
+      document.getElementById("bookingModal").classList.add("active");
+      document.body.style.overflow = "hidden";
+    }
+    function closeBookingModal() {
+      document.getElementById("bookingModal").classList.remove("active");
+      document.body.style.overflow = "";
+    }
+    document.getElementById("bookingModal").addEventListener("click", function(e) {
+      if (e.target === this) closeBookingModal();
+    });
+    document.addEventListener("keydown", function(e) {
+      if (e.key === "Escape") closeBookingModal();
+    });
+  </script>
+
+</body>
+</html>

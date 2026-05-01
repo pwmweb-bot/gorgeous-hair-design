@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meet Our Team | Gorgeous Hair Design, Droitwich</title>
+    <meta name="description" content="Meet the talented team at Gorgeous Hair Design, Droitwich. Our experienced stylists, beauticians and piercers are here to help you look and feel your best.">
+    <link rel="canonical" href="https://www.gorgeoushairdesign.uk/team.html">
+    <meta property="og:title" content="Meet Our Team | Gorgeous Hair Design, Droitwich">
+    <meta property="og:description" content="Meet our talented stylists, beauticians and piercers at Gorgeous Hair Design, Droitwich Spa.">
+    <meta property="og:url" content="https://www.gorgeoushairdesign.uk/team.html">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://www.gorgeoushairdesign.uk/images/team-kylie.jpg">
+    <meta property="og:locale" content="en_GB">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Meet Our Team | Gorgeous Hair Design, Droitwich">
+    <meta name="twitter:description" content="Meet our talented stylists, beauticians and piercers at Gorgeous Hair Design, Droitwich Spa.">
+    <meta name="twitter:image" content="https://www.gorgeoushairdesign.uk/images/team-kylie.jpg">
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Jost:wght@300;400;500;600&family=Material+Icons+Outlined&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+    <style>
+        .hero {
+            background: linear-gradient(rgba(26, 26, 26, 0.5), rgba(26, 26, 26, 0.5)), url('images/hero-inner.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: var(--cream);
+        }
+
+        .hero-content h1 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 3.5rem;
+            font-weight: 400;
+            margin-bottom: 0.5rem;
+        }
+
+        .hero-content p {
+            font-size: 1.1rem;
+            color: var(--blush);
+        }
+
+        .section {
+            padding: 60px 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .section h1 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 2.5rem;
+            font-weight: 400;
+            margin-bottom: 20px;
+            color: var(--dark);
+        }
+
+        .intro-text {
+            font-family: 'Jost', sans-serif;
+            font-size: 1rem;
+            line-height: 1.8;
+            color: var(--text-light);
+            margin-bottom: 50px;
+            max-width: 800px;
+        }
+
+        .grid-2 {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 40px;
+        }
+
+        .team-card {
+            background: var(--cream);
+            border-radius: 8px;
+            overflow: hidden;
+            border: 1px solid var(--border);
+            transition: transform 0.3s ease;
+        }
+
+        .team-card:hover {
+            transform: translateY(-8px);
+        }
+
+        .team-card-image {
+            width: 100%;
+            aspect-ratio: 3/4;
+            object-fit: cover;
+            display: block;
+        }
+
+        .team-card-content {
+            padding: 30px 25px;
+        }
+
+        .team-card h3 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.6rem;
+            font-weight: 400;
+            color: var(--dark);
+            margin-bottom: 8px;
+        }
+
+        .team-card .role {
+            font-family: 'Jost', sans-serif;
+            font-size: 0.95rem;
+            font-weight: 600;
+            color: var(--gold);
+            margin-bottom: 15px;
+            display: block;
+        }
+
+        .team-card p {
+            font-family: 'Jost', sans-serif;
+            font-size: 0.9rem;
+            line-height: 1.7;
+            color: var(--text-light);
+        }
+
+        .btn-book {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 12px 24px;
+            min-height: 44px;
+            background: var(--gold);
+            color: var(--dark);
+            font-family: 'Jost', sans-serif;
+            font-size: 0.88rem;
+            font-weight: 600;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+            text-decoration: none;
+            border-radius: 4px;
+            transition: background 0.3s ease;
+        }
+
+        .btn-book:hover {
+            background: #a8845a;
+        }
+
+        .cta-section {
+            background: var(--dark);
+            color: var(--cream);
+            padding: 60px 20px;
+            text-align: center;
+            margin-top: 60px;
+        }
+
+        .cta-section h2 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 2.2rem;
+            font-weight: 400;
+            color: var(--cream);
+            margin-bottom: 20px;
+        }
+
+        .cta-section p {
+            font-family: 'Jost', sans-serif;
+            font-size: 1rem;
+            color: var(--blush);
+            margin-bottom: 20px;
+        }
+
+        .cta-section a {
+            color: var(--gold);
+            text-decoration: none;
+            font-weight: 600;
+            transition: color 0.3s ease;
+        }
+
+        .cta-section a:hover {
+            color: #a8845a;
+        }
+
+        .fade-up {
+            opacity: 0;
+            animation: fadeUp 0.8s ease-out forwards;
+        }
+
+        @keyframes fadeUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .grid-2 {
+                grid-template-columns: 1fr;
+                gap: 30px;
+            }
+
+            .hero-content h1 {
+                font-size: 2rem;
+            }
+
+            .section h1 {
+                font-size: 1.8rem;
+            }
+        }
+    </style>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.gorgeoushairdesign.uk/" },
+      { "@type": "ListItem", "position": 2, "name": "Meet the Team", "item": "https://www.gorgeoushairdesign.uk/team.html" }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <nav class="nav" role="navigation" aria-label="Main navigation">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">Gorgeous<span>.</span></a>
+      <ul class="nav-links" role="list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="team.html" class="active">Team</a></li>
+        <li><a href="testimonials.html">Testimonials</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li class="nav-cta"><button onclick="openBookingModal()" class="btn btn-primary">Book Now</button></li>
+      </ul>
+      <button class="nav-burger" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content fade-up">
+            <h1>Meet the Team</h1>
+            <p>The talented people behind your transformation</p>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section class="section">
+        <div class="container">
+            <h1 class="fade-up">Our Expert Team</h1>
+            <p class="intro-text fade-up">With a combined experience of over 60 years in the beauty industry, our talented team brings passion, creativity, and expertise to every appointment. From precision cuts to advanced aesthetics and body piercing, we're committed to delivering exceptional results and making you feel absolutely gorgeous.</p>
+
+            <div class="grid-2 fade-up">
+                <!-- Team Member 1: Kylie -->
+                <div class="team-card">
+                    <img src="images/team-kylie.jpg" alt="Kylie" class="team-card-image" loading="lazy">
+                    <div class="team-card-content">
+                        <h3>Kylie</h3>
+                        <span class="role">Owner & Senior Stylist</span>
+                        <p>With over 18 years of experience, Kylie founded Gorgeous Hair Design in 2006 with a vision to create a sanctuary for hair care excellence. She is also qualified in hair piercings and aesthetics, and her passion for helping clients look and feel their best through professional treatments and genuine care truly defines the salon's ethos.</p>
+                        <a href="https://www.fresha.com/book-now/gorgeous-hair-design-wdzz9skf/services?lid=291251&eid=863251&share=true&pId=271809" target="_blank" rel="noopener" class="btn-book">Book with Kylie</a>
+                    </div>
+                </div>
+
+                <!-- Team Member 2: Jen -->
+                <div class="team-card">
+                    <img src="images/team-jen.jpg" alt="Jen" class="team-card-image" loading="lazy">
+                    <div class="team-card-content">
+                        <h3>Jen</h3>
+                        <span class="role">Senior Stylist</span>
+                        <p>Jen brings years of expertise and a warm, welcoming approach to every appointment. Her skill across cutting, colouring and styling ensures every client leaves feeling their very best.</p>
+                        <a href="https://www.fresha.com/book-now/gorgeous-hair-design-wdzz9skf/services?lid=291251&eid=863279&share=true&pId=271809" target="_blank" rel="noopener" class="btn-book">Book with Jen</a>
+                    </div>
+                </div>
+
+                <!-- Team Member 3: Chloe -->
+                <div class="team-card">
+                    <img src="images/team-chloe.jpg" alt="Chloe" class="team-card-image" loading="lazy">
+                    <div class="team-card-content">
+                        <h3>Chloe</h3>
+                        <span class="role">Stylist</span>
+                        <p>Chloe's creative eye and meticulous attention to detail make her a go-to for clients looking for something fresh and on-trend. She takes the time to understand exactly what each client wants and delivers every time.</p>
+                        <a href="https://www.fresha.com/book-now/gorgeous-hair-design-wdzz9skf/services?lid=291251&eid=1614371&share=true&pId=271809" target="_blank" rel="noopener" class="btn-book">Book with Chloe</a>
+                    </div>
+                </div>
+
+                <!-- Team Member 4: Meg -->
+                <div class="team-card">
+                    <img src="images/team-meg.jpg" alt="Meg" class="team-card-image" loading="lazy" style="object-position: center 30%; aspect-ratio: 4/3;">
+                    <div class="team-card-content">
+                        <h3>Meg</h3>
+                        <span class="role">Junior Stylist</span>
+                        <p>Meg is an exciting new talent beginning her career at Gorgeous. Full of enthusiasm and eager to build her client base, she's passionate about learning and perfecting her craft. All of Meg's work is guided and overseen by our senior stylists, so you're in safe hands — and at great introductory prices.</p>
+                        <a href="https://www.fresha.com/book-now/gorgeous-hair-design-wdzz9skf/services?lid=291251&eid=3251999&share=true&pId=271809" target="_blank" rel="noopener" class="btn-book">Book with Meg</a>
+                    </div>
+                </div>
+
+                <!-- Team Member 5: Annie -->
+                <div class="team-card">
+                    <img src="images/team-annie.jpg" alt="Annie" class="team-card-image" loading="lazy">
+                    <div class="team-card-content">
+                        <h3>Annie</h3>
+                        <span class="role">Senior Stylist</span>
+                        <p>Annie has been a valued member of the Gorgeous team since 2012, bringing over a decade of dedication and skill. With qualifications in Level 2 and 3 hairdressing and ear piercing, she specialises in bobs, graduated bobs and colour techniques, and loves creating vivid colours with meticulous attention to detail.</p>
+                        <a href="tel:+447979896616" class="btn-book">Call to Book Annie</a>
+                    </div>
+                </div>
+
+                <!-- Team Member 6: Lauren -->
+                <div class="team-card">
+                    <img src="images/team-lauren.jpg" alt="Lauren" class="team-card-image" loading="lazy">
+                    <div class="team-card-content">
+                        <h3>Lauren</h3>
+                        <span class="role">Senior Stylist</span>
+                        <p>Lauren started at Gorgeous in 2012 as an apprentice, completing NVQ Level 2 and 3 Ladies and NVQ Level 2 Gent. Her passion for hairdressing brought her back to the Gorgeous family, and she takes pride in making every client look and feel their absolute best.</p>
+                        <a href="tel:+447973859078" class="btn-book">Call to Book Lauren</a>
+                    </div>
+                </div>
+
+                <!-- Team Member 7: Gracie -->
+                <div class="team-card">
+                    <img src="images/team-gracie.jpg" alt="Gracie" class="team-card-image" loading="lazy">
+                    <div class="team-card-content">
+                        <h3>Gracie</h3>
+                        <span class="role">Senior Stylist</span>
+                        <p>Gracie is a qualified hairdresser and beautician with over 17 years of experience. With qualifications spanning hairdressing, barbering, advanced colouring, balayage and more, she brings a wealth of expertise and genuine passion to every client.</p>
+                        <a href="tel:+447860846747" class="btn-book">Call to Book Gracie</a>
+                    </div>
+                </div>
+
+                <!-- Team Member 8: Cerys -->
+                <div class="team-card">
+                    <img src="images/team-cerys.jpg" alt="Cerys" class="team-card-image" loading="lazy">
+                    <div class="team-card-content">
+                        <h3>Cerys</h3>
+                        <span class="role">Beautician</span>
+                        <p>Cerys is a full-time therapist and fully qualified lash technician with over two years' experience. Specialising in brow lamination, tinting, waxing and aesthetics treatments, she prides herself on perfection and tailored advice to enhance your natural features.</p>
+                        <a href="tel:+447868131015" class="btn-book">Call to Book Cerys</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Join Our Team CTA Section -->
+    <section class="cta-section">
+        <div class="container fade-up">
+            <h2>Join Our Team</h2>
+            <p>We're always looking for talented and passionate stylists, aestheticians, and piercers to join our growing salon. If you share our commitment to excellence and love what you do, we'd love to hear from you.</p>
+            <p><a href="mailto:hello@gorgeoushairdesign.uk">Get in touch at hello@gorgeoushairdesign.uk</a></p>
+        </div>
+    </section>
+
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-logo">Gorgeous<span>.</span></div>
+          <p class="footer-tagline">Gorgeous Hair Design, Aesthetics and Body Piercing. Expert hair and beauty services in the heart of Droitwich Spa, Worcestershire. Trusted since 2006.</p>
+          <div class="footer-social">
+            <a href="https://www.google.com/maps/place/Gorgeous+Hair+Design+Piercings+and+Aesthetics+Droitwich/@52.2672351,-2.1553533,898m/data=!3m2!1e3!4b1!4m6!3m5!1s0x4870edf00818c253:0x272aa14ac5d4ca6e!8m2!3d52.2672351!4d-2.1553533!16s%2Fg%2F1ts1m23b?entry=ttu" aria-label="Google Maps" target="_blank" rel="noopener"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 010-5 2.5 2.5 0 010 5z"/></svg></a>
+            <a href="https://www.facebook.com/GoRgEoUsHaIr20" aria-label="Facebook" target="_blank" rel="noopener"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg></a>
+            <a href="https://www.instagram.com/hair_piercings_aesthetics_?igsh=MTRsN3d5aDYxdGZ3MA%3D%3D" aria-label="Instagram" target="_blank" rel="noopener"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg></a>
+            <a href="https://www.tiktok.com/@gorgeoushairandpiercings" aria-label="TikTok" target="_blank" rel="noopener"><svg width="16" height="16" viewBox="0 0 448 512" fill="currentColor"><path d="M448 209.91a210.06 210.06 0 01-122.77-39.25v178.72A162.55 162.55 0 11185 188.31v89.89a74.62 74.62 0 1052.23 71.18V0h88a121.18 121.18 0 00.86 22.17A122.18 122.18 0 00381 102.39a121.43 121.43 0 0067 20.14z"/></svg></a>
+          </div>
+        </div>
+        <div>
+          <h4>Navigate</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="team.html">Meet the Team</a></li>
+            <li><a href="testimonials.html">Testimonials</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Services</h4>
+          <ul class="footer-links">
+            <li><a href="services.html#cuts">Cuts &amp; Styling</a></li>
+            <li><a href="services.html#colour">Colour &amp; Highlights</a></li>
+            <li><a href="services.html#balayage">Balayage</a></li>
+            <li><a href="services.html#wedding">Wedding Hair</a></li>
+            <li><a href="services.html#microneedling">Micro Needling</a></li>
+            <li><a href="services.html#antiwrinkle">Anti-Wrinkle</a></li>
+            <li><a href="services.html#dermalfiller">Dermal Filler</a></li>
+            <li><a href="services.html#skinboosters">Skin Boosters</a></li>
+            <li><a href="services.html#vitamins">Vitamin Injections</a></li>
+            <li><a href="services.html#lashes">Lashes</a></li>
+            <li><a href="services.html#brows">Brows &amp; Waxing</a></li>
+            <li><a href="services.html#piercing">Body Piercing</a></li>
+          </ul>
+        </div>
+        <div class="footer-contact">
+          <h4>Visit Us</h4>
+          <p>20 Ombersley Street West<br>Droitwich Spa<br>Worcestershire WR9 8HZ</p>
+          <p style="margin-top: 12px;"><a href="tel:01905799055">01905 799055</a></p>
+          <p><a href="mailto:hello@gorgeoushairdesign.uk">hello@gorgeoushairdesign.uk</a></p>
+          <p style="margin-top: 12px; font-size: 0.83rem; color: rgba(255,255,255,0.35);">
+            Mon: Beautician Only<br>
+            Tue: 9am–5pm<br>
+            Wed: 11am–8pm<br>
+            Thu: 9am–5pm<br>
+            Fri: 9am–5pm<br>
+            Sat: 9am–2pm<br>
+            Sunday: Closed
+          </p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Gorgeous Hair Design. All rights reserved.</p>
+        <p><a href="privacy.html">Privacy Policy</a> &nbsp;|&nbsp; <a href="#" onclick="openBookingModal(); return false;">Book Now</a></p>
+      </div>
+    </div>
+  </footer>
+
+    <script src="js/main.js"></script>
+
+  <!-- ── BOOKING MODAL ──────────────────────────────────────── -->
+  <div class="booking-modal-overlay" id="bookingModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="booking-modal">
+      <button class="booking-modal-close" onclick="closeBookingModal()" aria-label="Close">&times;</button>
+      <h3 id="modalTitle">Book an Appointment</h3>
+      <p class="modal-subtitle">How would you like to book?</p>
+      <a href="https://www.fresha.com/book-now/gorgeous-hair-design-wdzz9skf/services?lid=291251&share=true" target="_blank" rel="noopener" class="modal-option-btn">
+        <span class="opt-title">View Booking Page</span>
+        <span class="opt-desc">Browse all services and available times</span>
+      </a>
+      <div class="modal-divider">or book directly with a stylist</div>
+      <div class="modal-stylist-grid">
+        <a href="https://www.fresha.com/book-now/gorgeous-hair-design-wdzz9skf/services?lid=291251&eid=863251&share=true&pId=271809" target="_blank" rel="noopener" class="modal-stylist-btn"><span class="material-icons-outlined" style="font-size: 1.1em; vertical-align: middle; margin-right: 4px;">calendar_today</span> Kylie</a>
+        <a href="https://www.fresha.com/book-now/gorgeous-hair-design-wdzz9skf/services?lid=291251&eid=863279&share=true&pId=271809" target="_blank" rel="noopener" class="modal-stylist-btn"><span class="material-icons-outlined" style="font-size: 1.1em; vertical-align: middle; margin-right: 4px;">calendar_today</span> Jen</a>
+        <a href="https://www.fresha.com/book-now/gorgeous-hair-design-wdzz9skf/services?lid=291251&eid=1614371&share=true&pId=271809" target="_blank" rel="noopener" class="modal-stylist-btn"><span class="material-icons-outlined" style="font-size: 1.1em; vertical-align: middle; margin-right: 4px;">calendar_today</span> Chloe</a>
+        <a href="https://www.fresha.com/book-now/gorgeous-hair-design-wdzz9skf/services?lid=291251&eid=3251999&share=true&pId=271809" target="_blank" rel="noopener" class="modal-stylist-btn"><span class="material-icons-outlined" style="font-size: 1.1em; vertical-align: middle; margin-right: 4px;">calendar_today</span> Meg</a>
+        <a href="tel:+447979896616" class="modal-stylist-btn"><span class="material-icons-outlined" style="font-size: 1.1em; vertical-align: middle; margin-right: 4px;">call</span> Annie</a>
+        <a href="tel:+447973859078" class="modal-stylist-btn"><span class="material-icons-outlined" style="font-size: 1.1em; vertical-align: middle; margin-right: 4px;">call</span> Lauren</a>
+        <a href="tel:+447860846747" class="modal-stylist-btn"><span class="material-icons-outlined" style="font-size: 1.1em; vertical-align: middle; margin-right: 4px;">call</span> Gracie</a>
+        <a href="tel:+447868131015" class="modal-stylist-btn"><span class="material-icons-outlined" style="font-size: 1.1em; vertical-align: middle; margin-right: 4px;">call</span> Cerys</a>
+      </div>
+    </div>
+  </div>
+  <script>
+    function openBookingModal() {
+      document.getElementById("bookingModal").classList.add("active");
+      document.body.style.overflow = "hidden";
+    }
+    function closeBookingModal() {
+      document.getElementById("bookingModal").classList.remove("active");
+      document.body.style.overflow = "";
+    }
+    document.getElementById("bookingModal").addEventListener("click", function(e) {
+      if (e.target === this) closeBookingModal();
+    });
+    document.addEventListener("keydown", function(e) {
+      if (e.key === "Escape") closeBookingModal();
+    });
+  </script>
+
+</body>
+</html>
