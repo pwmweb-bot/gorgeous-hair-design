@@ -2,9 +2,8 @@
 Redirect 301 /book-online https://www.fresha.com/book-now/gorgeous-hair-design-wdzz9skf/services
 Redirect 410 /_api/one-app-session-web/v3/businesses
 
-# ── Force HTTPS + www in one step (avoids [L] chain bug) ──
+# ── Force www (HTTPS handled by 20i CDN — no HTTPS redirect needed) ──
 RewriteEngine On
-RewriteCond %{HTTPS} off [OR]
 RewriteCond %{HTTP_HOST} !^www\. [NC]
 RewriteRule ^(.*)$ https://www.gorgeoushairdesign.uk/$1 [L,R=301]
 
